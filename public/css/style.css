@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgb(138, 217, 217);
+}
+
+header {
+    background-color: white;
+    height: 70px;
+    box-shadow: 2px 2px 3px rgb(148, 148, 148);
+    display: flex;
+}
+nav {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: teal;
+    cursor: pointer;
+}
+
+menu {
+  
+  display: flex;
+  align-items: center;
+  gap: 30px !important;
+}
+
+a {
+    font-weight: bold;
+
+}
+
+a:hover {
+    color: teal;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+span {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.container {
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+form {
+    margin: auto;
+    margin-top: 15px;
+    width: 40%;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(148, 148, 148);
+}
+
+h3 {
+    text-align: center;
+    color: teal;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(240, 237, 237);
+}
+
+button {
+    background-color: teal;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(3, 164, 164);
+}
+
+@media (max-width: 560px){
+    header {
+        height: auto;
+    }
+  nav {
+     flex-direction: column;
+  }
+  .logo {
+     margin-bottom: 5px;
+  }
+
+  menu {
+      justify-content: space-between;
+      width: 100%;
+  }
+  form {
+      width: 90%;
+    
+    }
+}
